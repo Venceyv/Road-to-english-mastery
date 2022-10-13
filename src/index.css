@@ -5,26 +5,26 @@
 @layer base {
   @font-face {
     font-family: Josefin-sans;
-    src: url(./assets/JosefinSans.ttf) format('truetype');
+    src: url(./assets/fonts/JosefinSans.ttf) format('truetype');
   }
   @font-face {
     font-family: Gemini-moon;
-    src: url(./assets/Geminimoon.otf) format('opentype');
+    src: url(./assets/fonts/Geminimoon.otf) format('opentype');
   }
   @font-face {
     font-family: Gemini-moon2;
-    src: url(./assets/Geminimoon2.otf) format('opentype');
+    src: url(./assets/fonts/Geminimoon2.otf) format('opentype');
   }
   @font-face {
     font-family: fzf;
-    src: url(./assets/FZF.ttf) format('truetype');
+    src: url(./assets/fonts/FZF.ttf) format('truetype');
   }
   @font-face {
     font-family: fzf2;
-    src: url(./assets/FZF2.ttf) format('truetype');
+    src: url(./assets/fonts/FZF2.ttf) format('truetype');
   }
   @font-face {
     font-family: fzf3;
-    src: url(./assets/FZF3.ttf) format('truetype');
+    src: url(./assets/fonts/FZF3.ttf) format('truetype');
   }
 }

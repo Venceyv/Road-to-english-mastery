@@ -1,6 +1,8 @@
 import { useEffect, FC } from 'react';
 import useDropDown from './hooks/useDropDown';
-import NavBar from './components/Navbar';
+import { NavBar, Card, Banner } from './components';
+import { cards } from './data/cards';
+import { banner } from './data/banner';
 import './App.css';
 
 const App: FC = () => {
@@ -31,7 +33,14 @@ const App: FC = () => {
         setUserDropDown={setUserDropDown}
         toggleUserDropDown={toggleUserDropDown}
       />
-      <div className="bg-primary-black h-[calc(100%-56px)]"></div>
+      <div className="flex justify-center bg-primary-black">
+        <Banner title={banner.title} hint={banner.hint} />
+      </div>
+      <div className="flex flex-col justify-start items-center pt-16 h-[calc(100%-56px)] bg-primary-black  ">
+        {cards.map((card) => {
+          return <Card picture={card.picture} cardInfo={card.cardInfo} />;
+        })}
+      </div>
     </>
   );
 };

@@ -7,17 +7,22 @@ interface NavbarProps {
   toggleUserDropDown: () => void;
 }
 
-const NavBar: FC<NavbarProps> = ({ userRef, dropdown, setUserDropDown, toggleUserDropDown }) => {
+export const NavBar: FC<NavbarProps> = ({
+  userRef,
+  dropdown,
+  setUserDropDown,
+  toggleUserDropDown,
+}) => {
   return (
     <div className="sticky flex items-center justify-start top-0 flex-1 h-[56px] w-full gap-8 pl-4 pr-2 mx-auto drop-shadow-md bg-secondary-black">
-      <img src="../src/assets/image.png" alt="logo" className="w-[56px] h-[56px] " />
+      <img src="../src/assets/img/image.png" alt="logo" className="w-[56px] h-[56px] " />
       <div className="flex items-center text-white ">
-        <div className="h-full font-fzf3 font-extrabold text-xl m-2">老妈の英语之路</div>
+        <div className="h-full font-fzf3 font-extrabold text-xl m-2">老妈の英语之旅</div>
       </div>
       <img
         id="user-img"
         className="h-[40px] ml-auto cursor-pointer"
-        src="../src/assets/menu.svg"
+        src="../src/assets/img/menu.svg"
         alt="arrow"
         onClick={toggleUserDropDown}
       />
@@ -43,5 +48,3 @@ const NavBar: FC<NavbarProps> = ({ userRef, dropdown, setUserDropDown, toggleUse
     </div>
   );
 };
-
-export default NavBar;
