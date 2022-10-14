@@ -1,22 +1,16 @@
 import { FC } from 'react';
 
-interface BannerProp {
-  title: string;
-  hint: string;
-}
-
-export const Banner: FC<BannerProp> = ({ title, hint }) => {
+export const Banner: FC = () => {
   return (
-    <div className="flex flex-col items-center rounded-md w-fit p-2 mt-4 bg-secondary-black">
-      <div className="font-bold text-md text-white">
-        <span className="text-indigo-300"> * </span>
-        {title}
-        <span className="text-indigo-300"> * </span>
+    <div className="relative flex items-center rounded-md w-fit mt-2">
+      <div className="h-fit font-bold text-md text-center text-white">
+        点击任何一条路嚟
+        <br />
+        开始英语之旅
       </div>
-      <div className="font-bold text-md text-white pt-3">
-        <span className="text-indigo-300"> &gt;&gt; </span>
-        {hint}
-        <span className="text-indigo-300"> &lt;&lt; </span>
+      <div className="relative">
+        <img src="./src/assets/img/pick.png" alt="pick" className="w-[120px] h-[120px] top-2 rotate-[-20deg]" />
+        <p className="absolute font-bold text-sm text-black top-[70px] left-[57px] rotate-[-25deg]">选条路喔</p>
       </div>
     </div>
   );
