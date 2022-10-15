@@ -1,21 +1,24 @@
 import { FC } from 'react';
-import { NavBar, Card, Banner } from './components';
-import { cards } from './data/cards';
-import { banner } from './data/banner';
+import { Routes, Route } from 'react-router-dom';
+import { HomePage } from './pages/HomePage';
+import { Layout } from './layouts/Layout';
+import { NotFoundPage } from './pages/NotFoundPage';
+import { RoadNotFoundPage } from './pages/RoadNotFoundPage';
+import { AlphabetRoadPage } from './pages/AlphabetRoadPage';
 import './App.css';
 
 const App: FC = () => {
   return (
     <>
-      <NavBar />
-      <div className="flex justify-center bg-primary-black">
-        <Banner />
-      </div>
-      <div className="flex flex-col justify-start items-center pt-12 h-[calc(100%-184px)] bg-primary-black  ">
-        {cards.map((card) => {
-          return <Card picture={card.picture} cardInfo={card.cardInfo} />;
-        })}
-      </div>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<HomePage />} />
+          <Route path="road-alphabet" element={<AlphabetRoadPage />} />
+          <Route path="road-not-found" element={<RoadNotFoundPage />} />
+          {/* <Route path="alphabet-road" element={} /> */}
+        </Route>
+        <Route path="*" element={<NotFoundPage />} />
+      </Routes>
     </>
   );
 };

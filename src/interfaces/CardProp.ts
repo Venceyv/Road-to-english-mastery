@@ -1,9 +1,9 @@
 export interface CardProp {
   picture: {
     src: string;
-    isPicture: boolean;
   };
   cardInfo: {
+    path: string;
     title: string;
     description: string;
   };

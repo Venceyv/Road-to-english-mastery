@@ -15,6 +15,7 @@ module.exports = {
       colors: {
         'primary-black': '#181818',
         'secondary-black': '#202020',
+        'primary-green': 'rgba(95,199,145,255)',
       },
     },
   },
