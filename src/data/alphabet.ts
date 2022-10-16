@@ -18,7 +18,7 @@ export const alphabet = [
     picture: '🚗',
     example: 'Car',
     translation: '车',
-    audio: './src/assets/audio/C.mp3',
+    audio: '../../assets/audio/C.mp3',
   },
   {
     letter: 'D d',
