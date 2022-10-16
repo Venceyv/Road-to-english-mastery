@@ -13,8 +13,6 @@ const toastMessage = (): JSX.Element => {
 export const Alphabets: FC = (): JSX.Element => {
   const [isPlaying, setPlaying] = useState<boolean>(false);
   const [isToast, setToast] = useState<boolean>(false);
-
-  console.log(alphabet.length);
   return (
     <>
       <div className="grid gap-3 grid-cols-2 grid-flow-row p-5">

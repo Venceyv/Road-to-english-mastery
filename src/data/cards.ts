@@ -3,7 +3,7 @@ import { CardProp } from '../interfaces/CardProp';
 export const cards: CardProp[] = [
   {
     picture: {
-      src: './src/assets/img/easyCard.png',
+      src: '../assets/img/easyCard.png',
     },
     cardInfo: {
       path: 'alphabet',
@@ -14,7 +14,7 @@ export const cards: CardProp[] = [
 
   {
     picture: {
-      src: './src/assets/img/searchCard.png',
+      src: '../assets/img/searchCard.png',
     },
     cardInfo: {
       path: 'not-found',
