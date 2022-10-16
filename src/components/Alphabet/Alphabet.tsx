@@ -35,11 +35,11 @@ export const Alphabet: FC<AlphabetProp> = ({
   setToast,
 }): JSX.Element => {
   const alphabetRef = useRef<HTMLDivElement>(null);
+  const alphabetAudio = new Audio(audio);
 
   const onPlayAudio: Function = (): Function => {
     return () => {
       if (!isPlaying) {
-        const alphabetAudio = new Audio(audio);
         alphabetAudio.play();
         setPlaying(true);
         alphabetRef?.current?.classList.toggle('border-primary-green');

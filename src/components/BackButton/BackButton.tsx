@@ -10,7 +10,7 @@ export const BackButton: FC = (): JSX.Element => {
 
   return (
     <button type="button" onClick={navigateBack()} className="flex items-center gap-2">
-      <img src="./src/assets/img/backArrow.svg" alt="back-arrow" className="h-[40px] w-[40px]" />
+      <img src="../../assets/img/backArrow.svg" alt="back-arrow" className="h-[40px] w-[40px]" />
       <h1 className="font-bold text-md text-center text-white">点我嚟返回</h1>
     </button>
   );

@@ -5,14 +5,14 @@
 @layer base {
   @font-face {
     font-family: Josefin-sans;
-    src: url(./assets/fonts/JosefinSans.ttf) format('truetype');
+    src: url(../../assets/fonts/JosefinSans.ttf) format('truetype');
   }
   @font-face {
     font-family: fzf3;
-    src: url(./assets/fonts/FZF3.ttf) format('truetype');
+    src: url(../../assets/fonts/FZF3.ttf) format('truetype');
   }
   @font-face {
     font-family: Virgil;
-    src: url(./assets/fonts/Virgil.woff2) format('woff2');
+    src: url(../../assets/fonts/Virgil.woff2) format('woff2');
   }
 }

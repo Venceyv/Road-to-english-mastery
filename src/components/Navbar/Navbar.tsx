@@ -16,7 +16,7 @@ export const NavBar: FC = (): JSX.Element => {
 
   return (
     <div className="sticky flex items-center justify-start top-0 flex-1 h-[56px] w-full gap-8 pl-4 pr-2 mx-auto drop-shadow-md z-10 bg-secondary-black">
-      <img onClick={() => navigate('/')} src="../src/assets/img/image.png" alt="logo" className="w-[56px] h-[56px] cursor-pointer" />
+      <img onClick={() => navigate('/')} src="../../assets/img/image.png" alt="logo" className="w-[56px] h-[56px] cursor-pointer" />
       <div className="flex items-center text-white ">
         <div onClick={() => navigate('/')} className="h-full font-fzf3 font-extrabold text-xl m-2 cursor-pointer">
           老妈の英语之旅
@@ -25,7 +25,7 @@ export const NavBar: FC = (): JSX.Element => {
       <img
         id="user-img"
         className="h-[40px] ml-auto cursor-pointer"
-        src="../src/assets/img/menu.svg"
+        src="../../assets/img/menu.svg"
         alt="arrow"
         onClick={toggleUserDropDown}
       />
