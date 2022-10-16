@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-export const BackButton: FC = () => {
+export const BackButton: FC = (): JSX.Element => {
   const navigate = useNavigate();
 
   const navigateBack = () => {

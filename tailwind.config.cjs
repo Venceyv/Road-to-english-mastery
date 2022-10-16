@@ -5,11 +5,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['fzf3', 'Josefin-sans', 'Roboto', 'Helvetica', 'Arial', 'sans-serif'],
+        sans: ['fzf3', 'Roboto', 'Helvetica', 'Arial', 'sans-serif'],
         gemini: ['Gemini-moon2', 'Gemini-moon'],
-        fzf: ['fzf'],
-        fzf2: ['fzf2'],
-        fzf3: ['fzf3'],
+        sansJosefin: ['Josefin-sans'],
+        virgil: ['Virgil'],
       },
 
       colors: {

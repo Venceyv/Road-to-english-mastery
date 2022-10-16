@@ -2,7 +2,7 @@ import { FC } from 'react';
 import { CardProp } from '../../interfaces/CardProp';
 import { useNavigate } from 'react-router-dom';
 
-export const Card: FC<CardProp> = ({ picture, cardInfo }) => {
+export const Card: FC<CardProp> = ({ picture, cardInfo }): JSX.Element => {
   const navigate = useNavigate();
 
   const navigateRoute = () => {
@@ -11,7 +11,7 @@ export const Card: FC<CardProp> = ({ picture, cardInfo }) => {
   return (
     <div
       onClick={navigateRoute()}
-      className="flex justify-center items-center group min-w-[315px] w-full gap-3 px-6 md:px-10 cursor-pointer last:mt-6"
+      className="flex justify-center items-center group min-w-[315px] w-full gap-3 px-5 md:px-10 cursor-pointer last:mt-6"
     >
       <img
         src={`${picture.src}`}

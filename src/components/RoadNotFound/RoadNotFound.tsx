@@ -1,6 +1,6 @@
 import { FC } from 'react';
 
-export const RoadNotFound: FC = () => {
+export const RoadNotFound: FC = (): JSX.Element => {
   return (
     <>
       <img src="./src/assets/img/roadNotFound.png" alt="road-not-found" className="w-[355px] h-[359px]" />
