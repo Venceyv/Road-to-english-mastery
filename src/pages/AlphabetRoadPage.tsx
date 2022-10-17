@@ -7,7 +7,7 @@ const bannerProp: BannerProp = {
   description: '学发音， 试试按任何一个卡片',
 };
 
-export const AlphabetRoadPage: FC = () => {
+const AlphabetRoadPage: FC = () => {
   return (
     <div className="flex flex-col justify-start items-center w-full h-[calc(100%-56px)] overflow-auto bg-primary-black">
       <div className="flex w-full justify-start p-2 pb-0">
@@ -21,3 +21,5 @@ export const AlphabetRoadPage: FC = () => {
     </div>
   );
 };
+
+export default AlphabetRoadPage;

@@ -6,7 +6,7 @@ const bannerProp = {
   description: '点击任何一条路嚟开始英语之旅',
 };
 
-export const HomePage: FC = () => {
+const HomePage: FC = () => {
   return (
     <div className="flex flex-col justify-center w-full h-[calc(100%-80px)] overflow-auto overflow-x-hidden bg-primary-black">
       <div className="flex justify-center bg-primary-black">
@@ -16,3 +16,5 @@ export const HomePage: FC = () => {
     </div>
   );
 };
+
+export default HomePage;
