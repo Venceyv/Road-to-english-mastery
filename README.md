@@ -1,3 +1,3 @@
 # 老妈の英语之旅
 
-[Link to site](https://www.road-to-english-mastery.vercel.app)
+[Link to site](https://road-to-english-mastery.vercel.app/)
