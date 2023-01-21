@@ -7,4 +7,3 @@ export { RoadNotFound } from './RoadNotFound/RoadNotFound';
 export { BackButton } from './BackButton/BackButton';
 export { Alphabet } from './Alphabet/Alphabet';
 export { Alphabets } from './Alphabets/Alphabets';
-export { Footer } from './Footer/Footer';

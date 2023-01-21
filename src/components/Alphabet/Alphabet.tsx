@@ -61,15 +61,17 @@ export const Alphabet: FC<AlphabetProp> = ({
     <div
       ref={alphabetRef}
       onClick={onPlayAudio()}
-      className="flex w-[150px] h-[50px] rounded-lg border-2 pl-2 transition ease-in-out cursor-pointer hover:border-primary-green text-white bg-secondary-black focus:border-primary-green"
+      className="flex cursor-pointer rounded-lg border-2 bg-secondary-black px-2 py-1 text-white transition ease-in-out hover:border-primary-green focus:border-primary-green"
     >
-      <h1 className="flex items-center justify-center row-span-2 col-span-2 w-fit text-2xl font-bold">{letter}</h1>
-      <div className="flex flex-col jusitfy-center items-center mx-auto">
-        <div className="flex w-fit font-virgil">
+      <h1 className="col-span-2 row-span-2 flex w-fit items-center justify-center text-2xl sm:text-3xl md:text-4xl">
+        {letter}
+      </h1>
+      <div className="jusitfy-center mx-auto flex flex-col items-center">
+        <div className="flex w-fit font-virgil text-xl md:text-2xl ">
           <span>{picture}</span>
           {letter[0] !== 'X' ? displayExample(example) : displayXExample(example)}
         </div>
-        <div className="w-fit font-bold">{translation}</div>
+        <div className="w-fit text-xl font-bold md:text-2xl ">{translation}</div>
       </div>
     </div>
   );

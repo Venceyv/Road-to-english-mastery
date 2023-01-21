@@ -8,7 +8,7 @@ const bannerProp = {
 
 const HomePage: FC = () => {
   return (
-    <div className="flex flex-col justify-center w-full h-[calc(100%-80px)] overflow-auto overflow-x-hidden bg-primary-black">
+    <div className="flex h-[calc(100%-56px)] w-full flex-col justify-center overflow-auto overflow-x-hidden bg-primary-black">
       <div className="flex justify-center bg-primary-black">
         <Banner title={bannerProp.title} description={bannerProp.description} />
       </div>

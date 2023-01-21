@@ -11,17 +11,17 @@ export const Card: FC<CardProp> = ({ picture, cardInfo }): JSX.Element => {
   return (
     <div
       onClick={navigateRoute()}
-      className="flex justify-center items-center group min-w-[315px] w-full gap-3 px-5 md:px-10 cursor-pointer last:mt-6"
+      className="group flex w-full min-w-[315px] cursor-pointer items-center justify-center gap-3 px-5 transition ease-in-out last:mt-6 md:max-h-[400px] md:w-1/2 md:max-w-[250px] md:flex-col md:rounded-md md:border-none md:p-4 md:last:mt-0 md:hover:scale-105 md:hover:shadow md:hover:shadow-primary-green"
     >
       <img
         src={`${picture.src}`}
         alt="Card picture"
-        className="w-[78px] h-[78px] rounded-full border-2 transition ease-in-out group-hover:border-primary-green bg-white"
+        className="h-[78px] w-[78px] rounded-full border-2 bg-white transition ease-in-out group-hover:border-primary-green md:h-[80%] md:w-full md:rounded-md md:border-none"
       />
 
-      <div className="flex flex-col justify-center p-2 rounded-md border-2 min-w-[225px] w-full transition ease-in-out group-hover:border-primary-green bg-secondary-black">
-        <h1 className="text-white font-bold text-md">{cardInfo.title}</h1>
-        <p className="text-zinc-400 font-bold text-sm">{cardInfo.description}</p>
+      <div className="flex w-full min-w-[225px] flex-col justify-center rounded-md border-2 bg-secondary-black p-2 transition ease-in-out group-hover:border-primary-green md:h-auto md:border-none">
+        <h1 className="text-md font-bold text-white">{cardInfo.title}</h1>
+        <p className="text-sm font-bold text-zinc-400">{cardInfo.description}</p>
       </div>
     </div>
   );

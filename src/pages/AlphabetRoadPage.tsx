@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { Alphabets, BackButton, Banner, Footer } from '../components';
+import { Alphabets, BackButton, Banner } from '../components';
 import { BannerProp } from '../components/Banner/Banner';
 
 const bannerProp: BannerProp = {
@@ -9,15 +9,12 @@ const bannerProp: BannerProp = {
 
 const AlphabetRoadPage: FC = () => {
   return (
-    <div className="flex flex-col justify-start items-center w-full h-[calc(100%-56px)] overflow-auto bg-primary-black">
+    <div className="flex h-[calc(100%-56px)] w-full flex-col items-center justify-start overflow-auto bg-primary-black pb-1">
       <div className="flex w-full justify-start p-2 pb-0">
         <BackButton />
       </div>
       <Banner title={bannerProp.title} description={bannerProp.description} />
       <Alphabets />
-      <div className="w-full justify-end">
-        <Footer />
-      </div>
     </div>
   );
 };

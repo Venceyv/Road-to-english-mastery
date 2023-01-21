@@ -15,6 +15,7 @@ module.exports = {
         'primary-black': '#181818',
         'secondary-black': '#202020',
         'primary-green': 'rgba(95,199,145,255)',
+        'border-grey': '#e5e7eb',
       },
     },
   },
@@ -22,5 +23,6 @@ module.exports = {
     plugin(function ({ addVariant }) {
       addVariant('not-last', '&:not(:last-child)');
     }),
+    require('prettier-plugin-tailwindcss'),
   ],
 };
